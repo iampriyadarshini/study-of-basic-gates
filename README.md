@@ -1,14 +1,16 @@
-### study-of-basic-gates
+### NAME:PRIYADARSHINI K
+### REG NO:24900922
+# EXPERIMENT1:STUDY OF LOGIC GATES
 
-**AIM:** 
+# AIM:
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
 
-**Equipments Required:**
+# EQUIPMENT REQUIRED:
 
 Software – Quartus prime 
 
-**Theory**
+# THEORY
 
 Introduction Logic gates are the basic building blocks of any digital system. Logic gates are electronic circuits having one or more than one input and only one output. The relationship between the input and the output is based on a certain logic. Based on this, logic gates are named as
 
@@ -49,7 +51,7 @@ Y= A⊕B
 The 'Exclusive-NOR' gate circuit does the opposite to the EX-OR gate. It will give a low output if either, but not both of its two inputs are high. The symbol is an EX-OR gate with a small circle on the output. The small circle represents inversion.
 Y= A⊕B
 
-**Procedure** 
+# PROCEDURE 
 
 1.	Type the program in Quartus software.
 
@@ -62,18 +64,43 @@ Y= A⊕B
 5.	For different input combinations generate the timing diagram.
 
 
-**PROGRAM**
+# PROGRAM
 
-Program for logic gates and verify its truth table in quartus using Verilog programming
+module logicgates(a,b,notgate,andgate,orgate,nandgate,norgate,xorgate,xnorgate);
 
- Developed by: RegisterNumber: 
+input a,b;
+
+output notgate,andgate,orgate,nandgate,norgate,xorgate,xnorgate;
+
+not(notgate,a);
+
+and(andgate,a,b);
+
+or(orgate,a,b);
+
+nand(nandgate,a,b);
+
+nor(norgate,a,b);
+
+xor(xorgate,a,b);
+
+xnor(xnorgate,a,b);
+
+endmodule
  
-**Logic symbol & Truthtable**
+# LOGIC SYMBOL & TRUTHTABLE
+![LOGIC SYMBOL   TRUTHTABLE](https://github.com/user-attachments/assets/4528d79a-7259-451e-937e-9c2d2361a32c)
 
-**RTL realization Output:** 
 
-**RTL**
+# RTL OUTPUT:
+![RTL ](https://github.com/user-attachments/assets/a763449b-d2b7-42e3-b50d-3b2e2afd03f5)
 
-**Result:**
+
+# OUTPUT WAVEFORM
+![WAVEFORM](https://github.com/user-attachments/assets/60123f59-80cd-40e1-950b-8c4d85bd2568)
+
+
+# RESULT
+studied and verified the truth table of logic gates in Quartus II using Verilog programming successfully.
 
 
